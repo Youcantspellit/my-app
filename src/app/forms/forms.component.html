@@ -1,21 +1,16 @@
-<p>
-  forms works!
-</p>
-<div class="bg">
-  <mat-card>
-    <form class="example-form" #foodForm="ngForm" (ngSubmit)="onSubmit(foodForm)">
-      <div>
-        <mat-form-field class="example-full-width">
-          <mat-label>Favorite food</mat-label>
-          <input  [(ngModel)]="fromFoodModel.favorite_food" name="favorite_food_input" matInput placeholder="Ex. Pizza" value="Sushi">
-        </mat-form-field>
-      </div>
-    
+<mat-card>
+  <form class="example-form" #foodForm="ngForm" (ngSubmit)="onSubmit(foodForm)">
+    <div>
       <mat-form-field class="example-full-width">
-        <mat-label>Hated food</mat-label>
-        <input  [(ngModel)]="fromFoodModel.hated_food" name="hated_food_input" matInput placeholder="I hate to eat...">
+        <mat-label>Favorite food</mat-label>
+        <input  [(ngModel)]="fromFoodModel.favorite_food" name="favorite_food_input" matInput placeholder="Ex. Pizza" value="Sushi">
       </mat-form-field>
-      <button>Submit</button>
-    </form>
-  </mat-card>
-</div>
+    </div>
+  
+    <mat-form-field class="example-full-width">
+      <mat-label>Hated food</mat-label>
+      <input  [(ngModel)]="fromFoodModel.hated_food" name="hated_food_input" matInput placeholder="I hate to eat...">
+    </mat-form-field>
+    <button>Submit</button>
+  </form>
+</mat-card>
