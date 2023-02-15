@@ -9,7 +9,7 @@ import { takeUntil } from 'rxjs/operators';
   styleUrls: ['./users.component.scss']
 })
 export class UsersComponent implements OnInit {
-  public title = 'Hi Silviya';
+  public title = 'users works!';
   public cardsForHandset: Array<{title: string, cols: number, rows: number}> = [];
   public cardsForWeb = [];
   private ngUnsubscribe = new Subject<void>();
